@@ -1,0 +1,47 @@
+=======================================================================================================
+CMD CHALLENGES
+=======================================================================================================
+1)echo "hello world"
+2)pwd
+3)ls 
+4)cat access.log
+5)cat access.log | tail -5
+6)take-the-command-challenge
+7)mkdir -p tmp/files
+8)cp take-the-command-challenge tmp/files
+9)mv take-the-command-challenge tmp/files
+10)ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+11)rm -r * .*
+12)rm $(find . -name "*.doc")
+13)cat access.log | grep GET
+14)ls | grep "access.log"
+15)grep -rh 500
+16)grep -ro ^[0-9.]*
+17)ls -l|wc -l
+18)cat access.log | sort
+19)grep -c "GET" access.log
+20)cat split-me.txt | tr ';' '\n'
+21)echo $(seq 100)
+22)sed -i 'challenge are difficult' **/*.txt
+23)cat sum-me.txt | paste -sd+ | bc
+24)find -type f -printf \%f\\n
+25)find * -type f | rename 's/\..*//'
+26)ls | tr ' ' '.'
+27)dirname **/*.tf | uniq
+28)find -type f -printf "%f\n" | grep ^[0-9]
+29)cat faces.txt | head -n 25 | tail -1
+30)tac reverse-me.txt
+31)cat faces.txt | awk '!x[$0]++'
+32)cat random-numbers.txt | factor | grep -P '\d+: \d+$' | sort | uniq | wc -l
+33)sort access.log.* | grep -o ^[0-9.]* | uniq -d
+34)grep -rhB1 404 * | grep -v '404\|--'
+35)diff *.bin --to-file base.bin | cut -d ' ' -f 3
+36)cat .../*/'. .the flag.txt'
+37)grep -P "\t" * | wc -l
+38)find -type f ! -regex '.*\(exe\|txt\)$' -delete
+39)rm ./-*
+40)cat ps-ef* | sort -nuk2
+41)grep 'LISTEN' netstat.out | awk '{print $4}' | grep '\.' | cut -d : -f 2
+
+
+
